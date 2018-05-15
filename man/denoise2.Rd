@@ -4,20 +4,22 @@
 \alias{denoise2}
 \title{Total Variation Denoising for Image}
 \usage{
-denoise2(image, lambda = 1, niter = 100, method = c("TVL1.PrimalDual",
-  "TVL2.PrimalDual", "TVL2.FiniteDifference"))
+denoise2(data, lambda = 1, niter = 100, method = c("TVL1.PrimalDual",
+  "TVL2.PrimalDual", "TVL2.FiniteDifference"), normalize = FALSE)
 }
 \arguments{
-\item{image}{standard 2d or 3d array, or \code{cimg} object.}
+\item{data}{standard 2d or 3d array.}
 
 \item{lambda}{regularization parameter (positive real number).}
 
 \item{niter}{total number of iterations.}
 
 \item{method}{indicating problem and algorithm combination.}
+
+\item{normalize}{a logical; \code{TRUE} to make the range in \eqn{[0,1]}, or \code{FALSE} otherwise.}
 }
 \value{
-denoised image of same data type as input \code{image}.
+denoised array as same size of \code{data}.
 }
 \description{
 Given an image \code{f}, it solves an optimization of the form,
@@ -28,8 +30,8 @@ For more details, see the section below.
 }
 \section{Data format}{
 
-An input \code{image} can have one of three following types: 2-dimensional matrix representaing \emph{grayscale} image, 3-dimensional array
-for \emph{color} image whose 3rd dimension has size of 3, or \pkg{cimg} object represented as 4-d array.
+An input \code{data} can be either (1) 2-dimensional matrix representaing \emph{grayscale} image, or (2) 3-dimensional array
+for \emph{color} image.
 }
 
 \section{Algorithms for TV-L1 problem}{
@@ -53,23 +55,26 @@ and algorithms (in conjunction with model type) for this problems are \describe{
 }
 
 \examples{
-## Load data from 'imager' library and rescale it
-library(imager)
-x <- imager::imresize(imager::boats, scale=0.5)
+\dontrun{
+## Load grey-scale 'lena' data
+library(filling)
+data(lena128)
 
 ## Add white noise
-xnoised <- x + imager::imnoise(dim=dim(x), sd=0.1); plot(xnoised)
+sinfo   <- dim(lena128)   # get the size information
+xnoised <- lena128 + array(rnorm(sinfo, sd=10), sinfo)
 
 ## apply denoising models
-xproc1 <- denoise2(xnoised, method="TVL2.FiniteDifference")
-xproc2 <- denoise2(xnoised, method="TVL1.PrimalDual")
+xproc1 <- denoise2(xnoised, lambda=10, method="TVL2.FiniteDifference")
+xproc2 <- denoise2(xnoised, lambda=10, method="TVL1.PrimalDual")
 
 ## compare
-par(mfrow=c(2,2))
-plot(x, main="original")
-plot(xnoised, main="noised")
-plot(xproc1, main="TVL2.FiniteDifference")
-plot(xproc2, main="TVL1.PrimalDual")
+par(mfrow=c(2,2), pty="s")
+image(lena128, main="original")
+image(xnoised, main="noised")
+image(xproc1, main="TVL2.FiniteDifference")
+image(xproc2, main="TVL1.PrimalDual")
+}
 
 }
 \references{

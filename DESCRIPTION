@@ -1,7 +1,7 @@
 Package: tvR
 Type: Package
 Title: Total Variation Regularization
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: person("Kisung","You",role=c("aut","cre"),email="kyou@nd.edu",comment=c(ORCID="0000-0002-8584-459X"))
 Description: Provides tools for denoising noisy signal and images via
     Total Variation Regularization. Reducing the total variation of
@@ -11,7 +11,7 @@ Description: Provides tools for denoising noisy signal and images via
 License: GPL (>=3)
 Encoding: UTF-8
 LazyData: true
-Imports: Rcpp, Matrix, imager, Rdpack
+Imports: Rcpp, Matrix, Rdpack, magick, filling
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 6.0.1
 RdMacros: Rdpack
