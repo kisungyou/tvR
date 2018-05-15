@@ -11,7 +11,7 @@ Description: Provides tools for denoising noisy signal and images via
 License: GPL (>=3)
 Encoding: UTF-8
 LazyData: true
-Imports: Rcpp, Matrix, Rdpack, magick, filling
+Imports: Rcpp, Matrix, Rdpack, filling
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 6.0.1
 RdMacros: Rdpack
