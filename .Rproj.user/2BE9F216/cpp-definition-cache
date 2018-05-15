@@ -1,0 +1,134 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Auxiliary.cpp",
+                "kind" : 6,
+                "line" : 12,
+                "name" : "rcpp_01normalize(arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@rcpp_01normalize#&$@N@arma@C@Mat>#d#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Auxiliary.cpp",
+        "file_last_write" : 1508714708
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+                "kind" : 6,
+                "line" : 12,
+                "name" : "image_tvl2_FD(arma::mat &, const double, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@image_tvl2_FD#&$@N@arma@C@Mat>#d#1d#1d#"
+            },
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+                "kind" : 6,
+                "line" : 73,
+                "name" : "rcpp_imgradient_hor(arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@rcpp_imgradient_hor#&$@N@arma@C@Mat>#d#"
+            },
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+                "kind" : 6,
+                "line" : 85,
+                "name" : "rcpp_imgradient_ver(arma::mat &)",
+                "parent_name" : "",
+                "usr" : "c:@F@rcpp_imgradient_ver#&$@N@arma@C@Mat>#d#"
+            },
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+                "kind" : 6,
+                "line" : 97,
+                "name" : "rcpp_pmax_matrix(arma::mat &, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@rcpp_pmax_matrix#&$@N@arma@C@Mat>#d#d#"
+            },
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+                "kind" : 6,
+                "line" : 120,
+                "name" : "image_tvl1_primaldual(arma::mat &, const double, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@image_tvl1_primaldual#&$@N@arma@C@Mat>#d#1d#1d#"
+            },
+            {
+                "column" : 11,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+                "kind" : 6,
+                "line" : 199,
+                "name" : "image_tvl2_primaldual(arma::mat &, const double, const double)",
+                "parent_name" : "",
+                "usr" : "c:@F@image_tvl2_primaldual#&$@N@arma@C@Mat>#d#1d#1d#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Image.cpp",
+        "file_last_write" : 1508714845
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 14,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Signal.cpp",
+                "kind" : 6,
+                "line" : 9,
+                "name" : "rcpp_diff(arma::rowvec &)",
+                "parent_name" : "",
+                "usr" : "c:@F@rcpp_diff#&$@N@arma@C@Row>#d#"
+            },
+            {
+                "column" : 14,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Signal.cpp",
+                "kind" : 6,
+                "line" : 17,
+                "name" : "Dtz(arma::rowvec &, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@Dtz#&$@N@arma@C@Row>#d#1I#"
+            },
+            {
+                "column" : 14,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Signal.cpp",
+                "kind" : 6,
+                "line" : 31,
+                "name" : "signal_tvl2_IC(arma::rowvec &, const double, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@signal_tvl2_IC#&$@N@arma@C@Row>#d#1d#1I#"
+            },
+            {
+                "column" : 14,
+                "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Signal.cpp",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "signal_tvl2_MM(arma::colvec &, const double, const int)",
+                "parent_name" : "",
+                "usr" : "c:@F@signal_tvl2_MM#&$@N@arma@C@Col>#d#1d#1I#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/tvR/src/RcppCollection_Signal.cpp",
+        "file_last_write" : 1508638407
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/home/kisung/Desktop/tvR/src/rcpp_hello.cpp",
+                "kind" : 6,
+                "line" : 18,
+                "name" : "rcpp_hello",
+                "parent_name" : "",
+                "usr" : "c:@F@rcpp_hello#"
+            }
+        ],
+        "file" : "/home/kisung/Desktop/tvR/src/rcpp_hello.cpp",
+        "file_last_write" : 1508630431
+    }
+]

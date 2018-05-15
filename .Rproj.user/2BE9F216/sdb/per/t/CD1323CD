@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n@article{rudin_nonlinear_1992,\n\ttitle = {Nonlinear total variation based noise removal algorithms},\n\tvolume = {60},\n\tissn = {01672789},\n\turl = {http://linkinghub.elsevier.com/retrieve/pii/016727899290242F},\n\tdoi = {10.1016/0167-2789(92)90242-F},\n\tlanguage = {en},\n\tnumber = {1-4},\n\turldate = {2017-12-08},\n\tjournal = {Physica D: Nonlinear Phenomena},\n\tauthor = {Rudin, Leonid I. and Osher, Stanley and Fatemi, Emad},\n\tmonth = nov,\n\tyear = {1992},\n\tpages = {259--268},\n\tfile = {[Rudin.1992] Nonlinear total variation based noise removal algorithms.pdf:/home/kisung/Dropbox/V2. Applied Mathematics/P6. Signals/S1. TVReg/[Rudin.1992] Nonlinear total variation based noise removal algorithms.pdf:application/pdf}\n}\n\n@article{selesnick_convex_2015,\n\ttitle = {Convex 1-{D} {Total} {Variation} {Denoising} with {Non}-convex {Regularization}},\n\tvolume = {22},\n\tissn = {1070-9908, 1558-2361},\n\turl = {http://ieeexplore.ieee.org/document/6880761/},\n\tdoi = {10.1109/LSP.2014.2349356},\n\tnumber = {2},\n\turldate = {2017-12-08},\n\tjournal = {IEEE Signal Processing Letters},\n\tauthor = {Selesnick, Ivan W. and Parekh, Ankit and Bayram, Ilker},\n\tmonth = feb,\n\tyear = {2015},\n\tpages = {141--144},\n\tfile = {[Selesnick.2015] Convex 1-D Total Variation Denoising with Non-convex Regularization.pdf:/home/kisung/Dropbox/V2. Applied Mathematics/P6. Signals/S1. TVReg/[Selesnick.2015] Convex 1-D Total Variation Denoising with Non-convex Regularization.pdf:application/pdf}\n}\n\n@article{chambolle_first-order_2011,\n\ttitle = {A {First}-{Order} {Primal}-{Dual} {Algorithm} for {Convex} {Problems} with {Applications} to {Imaging}},\n\tvolume = {40},\n\tissn = {0924-9907, 1573-7683},\n\turl = {http://link.springer.com/10.1007/s10851-010-0251-1},\n\tdoi = {10.1007/s10851-010-0251-1},\n\tlanguage = {en},\n\tnumber = {1},\n\turldate = {2017-12-08},\n\tjournal = {Journal of Mathematical Imaging and Vision},\n\tauthor = {Chambolle, Antonin and Pock, Thomas},\n\tmonth = may,\n\tyear = {2011},\n\tpages = {120--145},\n\tfile = {[Chambolle_Pock.2011] A First-Order Primal-Dual Algorithm for Convex Problems with Applications to.pdf:/home/kisung/Dropbox/V2. Applied Mathematics/P6. Signals/S1. TVReg/[Chambolle_Pock.2011] A First-Order Primal-Dual Algorithm for Convex Problems with Applications to.pdf:application/pdf}\n}",
+    "created" : 1512759068394.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2153765548",
+    "id" : "CD1323CD",
+    "lastKnownWriteTime" : 1512759058,
+    "last_content_update" : 1512759058,
+    "path" : "~/Desktop/tvR/inst/REFERENCES.bib",
+    "project_path" : "inst/REFERENCES.bib",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

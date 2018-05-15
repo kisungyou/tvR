@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' tvR : Total Variation Regularization\n#'\n#' \\bold{tvR} provides tools for denoising noisy signal and images via\n#' Total Variation Regularization. Reducing the total variation of the given signal is known to remove spurious detail while preserving\n#' essential structural details. For now, we provide tools for \\emph{denoising} only on 1-dimensional signals or 2-dimensional images,\n#' where the latter be represented as 2d or 3d array, or an image object from \\pkg{cimg} package.\n#'\n#' @docType package\n#' @name tvR-package\n#' @import Matrix\n#' @import imager\n#' @import Rdpack\n#' @importFrom Rcpp evalCpp\n#' @useDynLib tvR\nNULL\n\n\n",
+    "created" : 1512758635896.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1076742113",
+    "id" : "C7994928",
+    "lastKnownWriteTime" : 1512758643,
+    "last_content_update" : 1512758643139,
+    "path" : "~/Desktop/tvR/R/package-tvR.R",
+    "project_path" : "R/package-tvR.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

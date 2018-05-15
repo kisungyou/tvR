@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Total Variation Denoising for Signal\n#'\n#' Given a 1-dimensional signal \\code{f}, it solves an optimization of the form,\n#' \\deqn{u^* = argmin_u E(u,f)+\\lambda V(u)}\n#' where \\eqn{E(u,f)} is fidelity term and \\eqn{V(u)} is total variation regularization term.\n#' The naming convention of a parameter \\code{method} is \\code{<problem type>} + \\code{<name of algorithm>}.\n#' For more details, see the section below.\n#'\n#' @section Algorithms for TV-L2 problem:\n#' The cost function for TV-L2 problem is\n#' \\deqn{min_u \\frac{1}{2} |u-f|_2^2 + \\lambda |\\nabla u|}\n#' where for a given 1-dimensional vector, \\eqn{|\\nabla u| = \\sum |u_{i+1}-u_{i}|}.\n#' Algorithms (in conjunction with model type) for this problems are \\describe{\n#'   \\item{\\code{\"TVL2.IC\"}}{Iterative Clipping algorithm.}\n#'   \\item{\\code{\"TVL2.MM\"}}{Majorization-Minorization algorithm.}\n#' }\n#' The codes are translated from MATLAB scripts by \\href{http://eeweb.poly.edu/iselesni/}{Ivan Selesnick.}\n#'\n#'\n#' @param signal vector of noisy signal.\n#' @param lambda regularization parameter (positive real number).\n#' @param niter  total number of iterations.\n#' @param method indicating problem and algorithm combination.\n#'\n#' @return a vector of same length as input \\code{signal.}\n#'\n#' @examples\n#' ## generate a stepped signal\n#' x = rep(sample(1:5,10,replace=TRUE), each=50)\n#'\n#' ## add some additive white noise\n#' xnoised = x + rnorm(length(x), sd=0.25)\n#'\n#' ## apply denoising process\n#' xproc1 = denoise1(xnoised, method = \"TVL2.IC\")\n#' xproc2 = denoise1(xnoised, method = \"TVL2.MM\")\n#'\n#' ## plot noisy and denoised signals\n#' plot(xnoised, pch=19, cex=0.1, main=\"Noisy signal\")\n#' lines(xproc1, col=\"blue\", lwd=2)\n#' lines(xproc2, col=\"red\", lwd=2)\n#' legend(\"bottomleft\",legend=c(\"Noisy\",\"TVL2.IC\",\"TVL2.MM\"),\n#' col=c(\"black\",\"blue\",\"red\"),#' lty = c(\"solid\", \"solid\", \"solid\"),\n#' lwd = c(0, 2, 2), pch = c(19, NA, NA),\n#' pt.cex = c(1, NA, NA), inset = 0.05)\n#'\n#'\n#' @references Rudin et al. (1992) \\emph{Nonlinear total variation based noise removal algorithms.} Physica D. Vol.60:259-268.\n#' @references Selesnick et al (2015) \\emph{Convex 1-D total variation denoising with non-convex regularization.} IEEE Signal Processing Letters, Vol.22(2):141-144.\n#' @export\ndenoise1 <- function(signal, lambda=1.0, niter=100, method=c(\"TVL2.IC\",\"TVL2.MM\")){\n  ## Check Data, Lambda, niter\n  if (!check_data_signal(signal)){\n    stop(\"* denoise1 : input 'signal' should be a vector with no NA or Inf values allowed.\")\n  }\n  signal = as.vector(signal)\n  if (!check_lambda(lambda)){\n    stop(\"* denoise1 : 'lambda' should be a positive real number.\")\n  }\n  if (!check_niter(niter)){\n    stop(\"* denoise1 : 'niter' should be a positive integer larger than 1.\")\n  }\n  ## Method Argument\n  if (missing(method)){\n    method = \"TVL2.IC\"\n  } else {\n    method = match.arg(method)\n  }\n\n  ## Main Computation\n  output = switch(method,\n                  TVL2.IC = denoise1.TVL2.IC(signal, lambda, niter),\n                  TVL2.MM = denoise1.TVL2.MM(signal, lambda, niter)\n                  )\n  return(output)\n}\n",
+    "created" : 1508788504680.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3053256575",
+    "id" : "53B61C3F",
+    "lastKnownWriteTime" : 1508788573,
+    "last_content_update" : 1508788573536,
+    "path" : "~/Desktop/tvR/R/denoise1.R",
+    "project_path" : "R/denoise1.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

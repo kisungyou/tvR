@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: tvR\nType: Package\nTitle: Total Variation Regularization\nVersion: 0.1.1\nAuthors@R: person(\"Kisung\",\"You\",role=c(\"aut\",\"cre\"),email=\"kyou@nd.edu\",comment=c(ORCID=\"0000-0002-8584-459X\"))\nDescription: Provides tools for denoising noisy signal and images via\n    Total Variation Regularization. Reducing the total variation of\n    the given signal is known to remove spurious detail while preserving\n    essential structural details. For the seminal work on the topic,\n    see Rudin et al (1992) <doi:10.1016/0167-2789(92)90242-F>.\nLicense: GPL (>=3)\nEncoding: UTF-8\nLazyData: true\nImports: Rcpp, Matrix, imager, Rdpack\nLinkingTo: Rcpp, RcppArmadillo\nRoxygenNote: 6.0.1\nRdMacros: Rdpack\n",
+    "created" : 1512758486681.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3979232190",
+    "id" : "9DA14780",
+    "lastKnownWriteTime" : 1512758534,
+    "last_content_update" : 1512758534995,
+    "path" : "~/Desktop/tvR/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
