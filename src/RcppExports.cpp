@@ -82,16 +82,6 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP _tvR_rcpp_hello() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello());
-    return rcpp_result_gen;
-END_RCPP
-}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_tvR_rcpp_01normalize", (DL_FUNC) &_tvR_rcpp_01normalize, 1},
@@ -100,7 +90,6 @@ static const R_CallMethodDef CallEntries[] = {
     {"_tvR_image_tvl2_primaldual", (DL_FUNC) &_tvR_image_tvl2_primaldual, 3},
     {"_tvR_signal_tvl2_IC", (DL_FUNC) &_tvR_signal_tvl2_IC, 3},
     {"_tvR_signal_tvl2_MM", (DL_FUNC) &_tvR_signal_tvl2_MM, 3},
-    {"_tvR_rcpp_hello", (DL_FUNC) &_tvR_rcpp_hello, 0},
     {NULL, NULL, 0}
 };
 

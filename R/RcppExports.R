@@ -25,7 +25,3 @@ signal_tvl2_MM <- function(y, lambda, maxiter) {
     .Call('_tvR_signal_tvl2_MM', PACKAGE = 'tvR', y, lambda, maxiter)
 }
 
-rcpp_hello <- function() {
-    .Call('_tvR_rcpp_hello', PACKAGE = 'tvR')
-}
-

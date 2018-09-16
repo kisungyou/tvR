@@ -8,7 +8,6 @@
 #' @docType package
 #' @name tvR-package
 #' @import Matrix
-#' @import filling
 #' @import Rdpack
 #' @importFrom Rcpp evalCpp
 #' @useDynLib tvR

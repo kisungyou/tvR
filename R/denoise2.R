@@ -37,7 +37,6 @@
 #' @examples
 #' \dontrun{
 #' ## Load grey-scale 'lena' data
-#' library(filling)
 #' data(lena128)
 #'
 #' ## Add white noise

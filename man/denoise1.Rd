@@ -58,7 +58,6 @@ col=c("black","blue","red"),#' lty = c("solid", "solid", "solid"),
 lwd = c(0, 2, 2), pch = c(19, NA, NA),
 pt.cex = c(1, NA, NA), inset = 0.05)
 
-
 }
 \references{
 \insertRef{rudin_nonlinear_1992}{tvR}
