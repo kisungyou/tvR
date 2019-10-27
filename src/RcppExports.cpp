@@ -18,67 +18,67 @@ BEGIN_RCPP
 END_RCPP
 }
 // image_tvl2_FD
-arma::mat image_tvl2_FD(arma::mat& u0, const double lambda, const double niter);
-RcppExport SEXP _tvR_image_tvl2_FD(SEXP u0SEXP, SEXP lambdaSEXP, SEXP niterSEXP) {
+arma::mat image_tvl2_FD(arma::mat u0tmp, const double lambda, const double niter);
+RcppExport SEXP _tvR_image_tvl2_FD(SEXP u0tmpSEXP, SEXP lambdaSEXP, SEXP niterSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::mat& >::type u0(u0SEXP);
+    Rcpp::traits::input_parameter< arma::mat >::type u0tmp(u0tmpSEXP);
     Rcpp::traits::input_parameter< const double >::type lambda(lambdaSEXP);
     Rcpp::traits::input_parameter< const double >::type niter(niterSEXP);
-    rcpp_result_gen = Rcpp::wrap(image_tvl2_FD(u0, lambda, niter));
+    rcpp_result_gen = Rcpp::wrap(image_tvl2_FD(u0tmp, lambda, niter));
     return rcpp_result_gen;
 END_RCPP
 }
 // image_tvl1_primaldual
-arma::mat image_tvl1_primaldual(arma::mat& u, const double lambda, const double niter);
-RcppExport SEXP _tvR_image_tvl1_primaldual(SEXP uSEXP, SEXP lambdaSEXP, SEXP niterSEXP) {
+arma::mat image_tvl1_primaldual(arma::mat utmp, const double lambda, const double niter);
+RcppExport SEXP _tvR_image_tvl1_primaldual(SEXP utmpSEXP, SEXP lambdaSEXP, SEXP niterSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::mat& >::type u(uSEXP);
+    Rcpp::traits::input_parameter< arma::mat >::type utmp(utmpSEXP);
     Rcpp::traits::input_parameter< const double >::type lambda(lambdaSEXP);
     Rcpp::traits::input_parameter< const double >::type niter(niterSEXP);
-    rcpp_result_gen = Rcpp::wrap(image_tvl1_primaldual(u, lambda, niter));
+    rcpp_result_gen = Rcpp::wrap(image_tvl1_primaldual(utmp, lambda, niter));
     return rcpp_result_gen;
 END_RCPP
 }
 // image_tvl2_primaldual
-arma::mat image_tvl2_primaldual(arma::mat& u, const double lambda, const double niter);
-RcppExport SEXP _tvR_image_tvl2_primaldual(SEXP uSEXP, SEXP lambdaSEXP, SEXP niterSEXP) {
+arma::mat image_tvl2_primaldual(arma::mat utmp, const double lambda, const double niter);
+RcppExport SEXP _tvR_image_tvl2_primaldual(SEXP utmpSEXP, SEXP lambdaSEXP, SEXP niterSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::mat& >::type u(uSEXP);
+    Rcpp::traits::input_parameter< arma::mat >::type utmp(utmpSEXP);
     Rcpp::traits::input_parameter< const double >::type lambda(lambdaSEXP);
     Rcpp::traits::input_parameter< const double >::type niter(niterSEXP);
-    rcpp_result_gen = Rcpp::wrap(image_tvl2_primaldual(u, lambda, niter));
+    rcpp_result_gen = Rcpp::wrap(image_tvl2_primaldual(utmp, lambda, niter));
     return rcpp_result_gen;
 END_RCPP
 }
 // signal_tvl2_IC
-arma::rowvec signal_tvl2_IC(arma::rowvec& y, const double lambda, const int maxiter);
-RcppExport SEXP _tvR_signal_tvl2_IC(SEXP ySEXP, SEXP lambdaSEXP, SEXP maxiterSEXP) {
+arma::rowvec signal_tvl2_IC(arma::rowvec ytmp, const double lambda, const int maxiter);
+RcppExport SEXP _tvR_signal_tvl2_IC(SEXP ytmpSEXP, SEXP lambdaSEXP, SEXP maxiterSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::rowvec& >::type y(ySEXP);
+    Rcpp::traits::input_parameter< arma::rowvec >::type ytmp(ytmpSEXP);
     Rcpp::traits::input_parameter< const double >::type lambda(lambdaSEXP);
     Rcpp::traits::input_parameter< const int >::type maxiter(maxiterSEXP);
-    rcpp_result_gen = Rcpp::wrap(signal_tvl2_IC(y, lambda, maxiter));
+    rcpp_result_gen = Rcpp::wrap(signal_tvl2_IC(ytmp, lambda, maxiter));
     return rcpp_result_gen;
 END_RCPP
 }
 // signal_tvl2_MM
-arma::colvec signal_tvl2_MM(arma::colvec& y, const double lambda, const int maxiter);
-RcppExport SEXP _tvR_signal_tvl2_MM(SEXP ySEXP, SEXP lambdaSEXP, SEXP maxiterSEXP) {
+arma::colvec signal_tvl2_MM(arma::colvec ytmp, const double lambda, const int maxiter);
+RcppExport SEXP _tvR_signal_tvl2_MM(SEXP ytmpSEXP, SEXP lambdaSEXP, SEXP maxiterSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::colvec& >::type y(ySEXP);
+    Rcpp::traits::input_parameter< arma::colvec >::type ytmp(ytmpSEXP);
     Rcpp::traits::input_parameter< const double >::type lambda(lambdaSEXP);
     Rcpp::traits::input_parameter< const int >::type maxiter(maxiterSEXP);
-    rcpp_result_gen = Rcpp::wrap(signal_tvl2_MM(y, lambda, maxiter));
+    rcpp_result_gen = Rcpp::wrap(signal_tvl2_MM(ytmp, lambda, maxiter));
     return rcpp_result_gen;
 END_RCPP
 }

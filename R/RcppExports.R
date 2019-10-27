@@ -5,23 +5,23 @@ rcpp_01normalize <- function(input) {
     .Call('_tvR_rcpp_01normalize', PACKAGE = 'tvR', input)
 }
 
-image_tvl2_FD <- function(u0, lambda, niter) {
-    .Call('_tvR_image_tvl2_FD', PACKAGE = 'tvR', u0, lambda, niter)
+image_tvl2_FD <- function(u0tmp, lambda, niter) {
+    .Call('_tvR_image_tvl2_FD', PACKAGE = 'tvR', u0tmp, lambda, niter)
 }
 
-image_tvl1_primaldual <- function(u, lambda, niter) {
-    .Call('_tvR_image_tvl1_primaldual', PACKAGE = 'tvR', u, lambda, niter)
+image_tvl1_primaldual <- function(utmp, lambda, niter) {
+    .Call('_tvR_image_tvl1_primaldual', PACKAGE = 'tvR', utmp, lambda, niter)
 }
 
-image_tvl2_primaldual <- function(u, lambda, niter) {
-    .Call('_tvR_image_tvl2_primaldual', PACKAGE = 'tvR', u, lambda, niter)
+image_tvl2_primaldual <- function(utmp, lambda, niter) {
+    .Call('_tvR_image_tvl2_primaldual', PACKAGE = 'tvR', utmp, lambda, niter)
 }
 
-signal_tvl2_IC <- function(y, lambda, maxiter) {
-    .Call('_tvR_signal_tvl2_IC', PACKAGE = 'tvR', y, lambda, maxiter)
+signal_tvl2_IC <- function(ytmp, lambda, maxiter) {
+    .Call('_tvR_signal_tvl2_IC', PACKAGE = 'tvR', ytmp, lambda, maxiter)
 }
 
-signal_tvl2_MM <- function(y, lambda, maxiter) {
-    .Call('_tvR_signal_tvl2_MM', PACKAGE = 'tvR', y, lambda, maxiter)
+signal_tvl2_MM <- function(ytmp, lambda, maxiter) {
+    .Call('_tvR_signal_tvl2_MM', PACKAGE = 'tvR', ytmp, lambda, maxiter)
 }
 

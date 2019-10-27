@@ -9,6 +9,7 @@
 #' @name tvR-package
 #' @import Matrix
 #' @import Rdpack
+#' @importFrom utils packageVersion
 #' @importFrom Rcpp evalCpp
 #' @useDynLib tvR
 NULL
