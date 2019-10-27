@@ -13,7 +13,7 @@ data(lena128)
 }
 \description{
 \emph{Lena} is probably one of the most well-known example in image processing and computer vision.
-Well, here is a brief introduction on \href{http://www.cs.cmu.edu/~chuck/lennapg/lenna.shtml}{the story of Lena}.
+Well, here is a brief introduction on \href{http://www.lenna.org/}{the story of Lena}.
 }
 \examples{
 data(lena128)
