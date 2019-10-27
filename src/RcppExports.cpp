@@ -7,12 +7,12 @@
 using namespace Rcpp;
 
 // rcpp_01normalize
-arma::mat rcpp_01normalize(arma::mat& input);
+arma::mat rcpp_01normalize(arma::mat input);
 RcppExport SEXP _tvR_rcpp_01normalize(SEXP inputSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< arma::mat& >::type input(inputSEXP);
+    Rcpp::traits::input_parameter< arma::mat >::type input(inputSEXP);
     rcpp_result_gen = Rcpp::wrap(rcpp_01normalize(input));
     return rcpp_result_gen;
 END_RCPP

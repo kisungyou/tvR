@@ -71,7 +71,7 @@ arma::mat image_tvl2_FD(arma::mat u0tmp, const double lambda, const double niter
 }
 
 
-arma::mat rcpp_imgradient_hor(arma::mat& u){
+arma::mat rcpp_imgradient_hor(arma::mat u){
   const int height = u.n_rows;
   const int width  = u.n_cols;
   arma::mat gradu(height,width,fill::zeros);
@@ -83,7 +83,7 @@ arma::mat rcpp_imgradient_hor(arma::mat& u){
   gradu = gradu - u;
   return(gradu);
 }
-arma::mat rcpp_imgradient_ver(arma::mat& u){
+arma::mat rcpp_imgradient_ver(arma::mat u){
   const int height = u.n_rows;
   const int width  = u.n_cols;
   arma::mat gradu(height,width,fill::zeros);
@@ -95,7 +95,7 @@ arma::mat rcpp_imgradient_ver(arma::mat& u){
   gradu = gradu - u;
   return(gradu);
 }
-arma::mat rcpp_pmax_matrix(arma::mat& u, double x){
+arma::mat rcpp_pmax_matrix(arma::mat u, double x){
   const int m = u.n_rows;
   const int n = u.n_cols;
   arma::mat output(m,n,fill::zeros);

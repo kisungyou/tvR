@@ -41,18 +41,20 @@
 #'
 #' ## Add white noise
 #' sinfo   <- dim(lena128)   # get the size information
-#' xnoised <- lena128 + array(rnorm(sinfo, sd=10), sinfo)
+#' xnoised <- lena128 + array(rnorm(128*128, sd=10), sinfo)
 #'
 #' ## apply denoising models
 #' xproc1 <- denoise2(xnoised, lambda=10, method="TVL2.FiniteDifference")
 #' xproc2 <- denoise2(xnoised, lambda=10, method="TVL1.PrimalDual")
 #'
 #' ## compare
+#' gcol = gray(0:256/256)
+#' x11()
 #' par(mfrow=c(2,2), pty="s")
-#' image(lena128, main="original")
-#' image(xnoised, main="noised")
-#' image(xproc1, main="TVL2.FiniteDifference")
-#' image(xproc2, main="TVL1.PrimalDual")
+#' image(lena128, main="original", col=gcol)
+#' image(xnoised, main="noised", col=gcol)
+#' image(xproc1, main="TVL2.FiniteDifference", col=gcol)
+#' image(xproc2, main="TVL1.PrimalDual", col=gcol)
 #' }
 #'
 #' @references

@@ -6,7 +6,7 @@ using namespace Rcpp;
 using namespace arma;
 
 // auxiliary functions for 1d signal
-arma::rowvec rcpp_diff(arma::rowvec& x){
+arma::rowvec rcpp_diff(arma::rowvec x){
   const int n = x.n_elem;
   arma::rowvec y(n-1,fill::zeros);
   for (int i=0;i<(n-1);i++){
@@ -14,7 +14,7 @@ arma::rowvec rcpp_diff(arma::rowvec& x){
   }
   return(y);
 }
-arma::rowvec Dtz(arma::rowvec& z, const int N){
+arma::rowvec Dtz(arma::rowvec z, const int N){
   arma::rowvec output(N,fill::zeros);
   arma::rowvec diffz = rcpp_diff(z);
 

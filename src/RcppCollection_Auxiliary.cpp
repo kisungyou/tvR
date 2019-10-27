@@ -9,7 +9,7 @@ using namespace arma;
  * 1. image normalization
  */
 // [[Rcpp::export]]
-arma::mat rcpp_01normalize(arma::mat& input){
+arma::mat rcpp_01normalize(arma::mat input){
   const int m = input.n_rows;
   const int n = input.n_cols;
 
