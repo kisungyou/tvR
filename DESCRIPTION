@@ -1,7 +1,7 @@
 Package: tvR
 Type: Package
 Title: Total Variation Regularization
-Version: 0.3.1
+Version: 0.3.2
 Authors@R: person("Kisung","You",role=c("aut","cre"),email="kyoustat@gmail.com",comment=c(ORCID="0000-0002-8584-459X"))
 Description: Provides tools for denoising noisy signal and images via
     Total Variation Regularization. Reducing the total variation of
