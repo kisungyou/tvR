@@ -49,12 +49,13 @@
 #'
 #' ## compare
 #' gcol = gray(0:256/256)
-#' x11()
+#' opar <- par(no.readonly=TRUE)
 #' par(mfrow=c(2,2), pty="s")
 #' image(lena128, main="original", col=gcol)
 #' image(xnoised, main="noised", col=gcol)
 #' image(xproc1, main="TVL2.FiniteDifference", col=gcol)
 #' image(xproc2, main="TVL1.PrimalDual", col=gcol)
+#' par(opar)
 #' }
 #'
 #' @references
@@ -100,4 +101,4 @@ denoise2 <- function(data, lambda=1.0, niter=100, method=c("TVL1.PrimalDual","TV
 }
 
 ## NOTE that for TVL1 and TVL2, sum(sqrt(Ix^2 + Iy^2)) + lambda*||I - g||_2^2 is default used.
-#' ROF : fixed point iteration (http://www.math.ucla.edu/~lvese/285j.1.05s/ROFScheme.pdf)
+#' ROF : fixed point iteration (www.math.ucla.edu/~lvese/285j.1.05s/ROFScheme.pdf)

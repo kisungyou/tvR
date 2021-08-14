@@ -4,8 +4,7 @@
 \alias{denoise1}
 \title{Total Variation Denoising for Signal}
 \usage{
-denoise1(signal, lambda = 1, niter = 100, method = c("TVL2.IC",
-  "TVL2.MM"))
+denoise1(signal, lambda = 1, niter = 100, method = c("TVL2.IC", "TVL2.MM"))
 }
 \arguments{
 \item{signal}{vector of noisy signal.}
@@ -35,10 +34,11 @@ Algorithms (in conjunction with model type) for this problems are \describe{
   \item{\code{"TVL2.IC"}}{Iterative Clipping algorithm.}
   \item{\code{"TVL2.MM"}}{Majorization-Minorization algorithm.}
 }
-The codes are translated from MATLAB scripts by \href{http://eeweb.poly.edu/iselesni/}{Ivan Selesnick.}
+The codes are translated from MATLAB scripts by \href{https://eeweb.poly.edu/iselesni/}{Ivan Selesnick.}
 }
 
 \examples{
+\donttest{
 ## generate a stepped signal
 x = rep(sample(1:5,10,replace=TRUE), each=50)
 
@@ -57,6 +57,7 @@ legend("bottomleft",legend=c("Noisy","TVL2.IC","TVL2.MM"),
 col=c("black","blue","red"),#' lty = c("solid", "solid", "solid"),
 lwd = c(0, 2, 2), pch = c(19, NA, NA),
 pt.cex = c(1, NA, NA), inset = 0.05)
+}
 
 }
 \references{

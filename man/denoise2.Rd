@@ -4,8 +4,13 @@
 \alias{denoise2}
 \title{Total Variation Denoising for Image}
 \usage{
-denoise2(data, lambda = 1, niter = 100, method = c("TVL1.PrimalDual",
-  "TVL2.PrimalDual", "TVL2.FiniteDifference"), normalize = FALSE)
+denoise2(
+  data,
+  lambda = 1,
+  niter = 100,
+  method = c("TVL1.PrimalDual", "TVL2.PrimalDual", "TVL2.FiniteDifference"),
+  normalize = FALSE
+)
 }
 \arguments{
 \item{data}{standard 2d or 3d array.}
@@ -69,12 +74,13 @@ xproc2 <- denoise2(xnoised, lambda=10, method="TVL1.PrimalDual")
 
 ## compare
 gcol = gray(0:256/256)
-x11()
+opar <- par(no.readonly=TRUE)
 par(mfrow=c(2,2), pty="s")
 image(lena128, main="original", col=gcol)
 image(xnoised, main="noised", col=gcol)
 image(xproc1, main="TVL2.FiniteDifference", col=gcol)
 image(xproc2, main="TVL1.PrimalDual", col=gcol)
+par(opar)
 }
 
 }

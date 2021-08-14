@@ -78,7 +78,8 @@ for (i in 1:4){
   compare[[i]] = denoise1(xnoised, lambda = 10^(i-4), method="TVL2.IC")
 }
 ```
-```{r compare2vis, fig.show='hold', echo=FALSE, fig.width=6, fig.height=2.5}
+```{r compare2vis, fig.show='hold', echo=FALSE, fig.width=7, fig.align='center'}
+par(mfrow=c(2,2))
 for (i in 1:4){
   pm = paste("lambda=1e",i-4,sep="")
   plot(xnoised, pch=19, cex=0.2, main=pm, xlab="time domain", ylab="signal value")
@@ -112,7 +113,7 @@ xproc1 <- denoise2(xnoised, lambda=10, method="TVL1.PrimalDual")
 xproc2 <- denoise2(xnoised, lambda=10, method="TVL2.FiniteDifference")
 xproc3 <- denoise2(xnoised, lambda=10, method="TVL2.PrimalDual")
 ```
-```{r compare3vis, echo=FALSE, fig.show='hold', fig.width=7, fig.height=6}
+```{r compare3vis, echo=FALSE, fig.show='hold', fig.width=7, fig.height=6, fig.align='center'}
 par(mfrow=c(2,2),pty="s")
 gcol = gray(0:128/128)
 image(xnoised, main="Noised", col=gcol)

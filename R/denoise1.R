@@ -14,7 +14,7 @@
 #'   \item{\code{"TVL2.IC"}}{Iterative Clipping algorithm.}
 #'   \item{\code{"TVL2.MM"}}{Majorization-Minorization algorithm.}
 #' }
-#' The codes are translated from MATLAB scripts by \href{http://eeweb.poly.edu/iselesni/}{Ivan Selesnick.}
+#' The codes are translated from MATLAB scripts by \href{https://eeweb.poly.edu/iselesni/}{Ivan Selesnick.}
 #'
 #'
 #' @param signal vector of noisy signal.
@@ -25,6 +25,7 @@
 #' @return a vector of same length as input \code{signal.}
 #'
 #' @examples
+#' \donttest{
 #' ## generate a stepped signal
 #' x = rep(sample(1:5,10,replace=TRUE), each=50)
 #'
@@ -43,6 +44,7 @@
 #' col=c("black","blue","red"),#' lty = c("solid", "solid", "solid"),
 #' lwd = c(0, 2, 2), pch = c(19, NA, NA),
 #' pt.cex = c(1, NA, NA), inset = 0.05)
+#' }
 #'
 #' @references
 #' \insertRef{rudin_nonlinear_1992}{tvR}
