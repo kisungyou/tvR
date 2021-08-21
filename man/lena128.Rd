@@ -8,14 +8,14 @@
 matrix of size \eqn{(128\times 128)}
 }
 \source{
-\href{https://sipi.usc.edu/database/?volume=misc}{USC SIPI Image Database}
+USC SIPI Image Database.
 }
 \usage{
 data(lena128)
 }
 \description{
 \emph{Lena} is probably one of the most well-known example in image processing and computer vision.
-Well, here is a brief introduction on \href{https://www.lenna.org/}{the story of Lena}.
+Due to CRAN instability, history of this image can be found by googling \emph{the story of Lena}.
 }
 \examples{
 data(lena128)

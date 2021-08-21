@@ -34,7 +34,7 @@ Algorithms (in conjunction with model type) for this problems are \describe{
   \item{\code{"TVL2.IC"}}{Iterative Clipping algorithm.}
   \item{\code{"TVL2.MM"}}{Majorization-Minorization algorithm.}
 }
-The codes are translated from MATLAB scripts by \href{https://eeweb.poly.edu/iselesni/}{Ivan Selesnick.}
+The codes are translated from MATLAB scripts by Ivan Selesnick.
 }
 
 \examples{
